@@ -1,0 +1,70 @@
+h1, p {
+  font-family: Lato;
+}
+
+.fa-chevron-right, .fa-chevron-left {
+  cursor: pointer;
+}
+
+* {
+  outline:none;
+}
+
+/* ::-webkit-scrollbar {
+display: none;
+} */
+
+.numbtn {
+  border-radius: 100px;
+  margin-right: 10px; 
+width: 40px;
+padding: 10px;
+  border: none;
+box-shadow: 0 4px 6px 0 hsla(0, 0% , 0% ,0.2);
+  color: black;
+  background-color: white;
+}
+
+.myShadow {
+  box-shadow: 0 4px 6px 0 hsla(0, 0% , 0% ,0.2);
+}
+
+#btnselected {
+    border-radius: 100px; 
+  margin-right: 10px; 
+  width: 40px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0% , 0% ,0.2);
+  border:none;
+  padding: 10px;
+  color: white;
+  
+  background-color: purple;
+}
+.numbtn:focus {
+  outline: none;
+}
+
+.numcont {
+  margin-top : 60px;
+  margin-bottom : 30px;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+
+.fullh {
+  height: 90vh;
+}
+
+.fullh1 {
+  height: 30vh;
+}
+
+.v-hidden {
+  visibility:hidden;
+}

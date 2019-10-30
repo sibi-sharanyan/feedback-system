@@ -1,12 +1,55 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import ScheduleTest from './scheduletest';
+import Alltests from './alltests';
+import TakeTest from './taketest';
+import Result from './result';
+import './style.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Paper , Typography , CircularProgress } from '@material-ui/core';
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: 'Sibi'
+    };
+  }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+  render() {
+    return (
+      <Router >
+      <Paper>
+        <div className=" d-flex justify-content-around bg-dark mb-3 text-white" >
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+          <Link to={'/'} className="nav-link text-white "> Take Test </Link>
+          <Link to={'/alltests'} className="nav-link text-white">All Tests</Link>
+          <Link to={'/schedule'} className="nav-link text-white">Schedule</Link>
+          
+        </div>
+
+      </Paper>
+
+
+
+
+
+
+
+
+
+
+
+        <Switch>
+          <Route exact path='/' component={TakeTest} />
+          <Route path='/alltests' component={Alltests} />
+          <Route path='/schedule' component={ScheduleTest} />
+           <Route path='/result/:code' component={Result} />
+        </Switch>
+
+
+      </Router>
+    );
+  }
+}
+render(<App />, document.getElementById('root'));
