@@ -1,3 +1,12 @@
+An Easy to use Feedback-System to get to know what the students in your School/College feel about your staff. Schedule tests which the students can take to rate the performance of the staff. The user can also get access to a results panel with various charts that help visualize the performance of the staff in your organisation.
+
+https://feedbacksys.netlify.com/
+
+The System comprises of 4 major modules. Each module was designed with keeping extensibility and scalability in mind. The application is not fully complete. But, it is still usable. 
+
+Authentication and the ability to construct questions will be added in the next version.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
